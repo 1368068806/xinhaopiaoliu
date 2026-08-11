@@ -45,6 +45,17 @@ git remote add origin https://github.com/你的用户名/信号漂流.git
 git push -u origin main
 ```
 
+### HTTPS 被重置时使用 SSH 443 推送
+
+如果 `git push` 提示 `Connection was reset`，可以改用 SSH 443 端口：
+
+```bash
+git remote set-url origin ssh://git@ssh.github.com:443/你的用户名/仓库名.git
+git push -u origin main
+```
+
+之后日常更新仍然使用 `git push`。
+
 ### 2. 在 Vercel 部署
 
 1. 打开 [vercel.com](https://vercel.com) 并登录
