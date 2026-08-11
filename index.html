@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>信号漂流</title>
+  </head>
+  <body>
+    <div id="game-canvas"></div>
+    <div id="game-ui">
+      <div id="hub-overlay" class="overlay"></div>
+      <div id="hud-overlay" class="overlay hidden"></div>
+      <div id="pause-overlay" class="overlay hidden"></div>
+      <div id="result-overlay" class="overlay hidden"></div>
+      <div id="toast-stack"></div>
+      <div id="touch-controls" class="hidden">
+        <div id="touch-stick"></div>
+        <div class="touch-actions">
+          <button id="touch-dash" type="button">冲刺</button>
+          <button id="touch-pulse" type="button">脉冲</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
